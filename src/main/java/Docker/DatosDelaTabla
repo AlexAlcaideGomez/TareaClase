@@ -1,0 +1,24 @@
+CREATE DATABASE Empresa;
+
+USE Empresa;
+
+CREATE TABLE Dietas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    empleado VARCHAR(100),
+    departamento VARCHAR(50),
+    cantidad DECIMAL(10, 2),
+    concepto TEXT
+);
+
+INSERT INTO Dietas (empleado, departamento, cantidad, concepto)
+VALUES
+('Juan Pérez', 'Informática', 35.00, 'Desayuno en viaje de negocios'),
+('Ana Gómez', 'Ventas', 25.50, 'Comida con cliente'),
+('Luis Martínez', 'Recursos Humanos', 40.00, 'Cena de trabajo'),
+('María López', 'Informática', 45.75, 'Almuerzo en conferencia'),
+('Carlos Ruiz', 'Ventas', 20.00, 'Café con cliente potencial'),
+('Laura Sánchez', 'Recursos Humanos', 55.00, 'Desayuno en taller de formación'),
+('José Fernández', 'Informática', 50.00, 'Cena en viaje de formación'),
+('Elena García', 'Ventas', 15.00, 'Merienda con equipo de ventas'),
+('Raúl Torres', 'Informática', 60.00, 'Almuerzo en reunión de proyecto'),
+('Marta Álvarez', 'Recursos Humanos', 30.00, 'Comida en seminario de liderazgo');
