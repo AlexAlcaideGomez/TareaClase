@@ -4,5 +4,4 @@ FROM mysql:latest
 ENV MYSQL_DATABASE=TareaClase
 ENV MYSQL_ROOT_PASSWORD=1234
 
-# Copia un script SQL personalizado para inicializar la base de datos
-COPY ./init.sql /docker-entrypoint-initdb.d/
+
